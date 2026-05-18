@@ -47,7 +47,9 @@
         .demo-content.bg-alt {
             background: #abb1b8;
         }
-    </style>
+ 
+   
+   </style>
 
     <body>
         <!---------------------------------- Begin the nav-bar ----------------------------------->
@@ -154,11 +156,36 @@
             <!---------Table-Striped------------------------------------------->
             <div class="container mt-3" name="table-striped">
             </div>
-
+ <style>
+            .table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-color-type: var(--bs-table-striped-color);
+  --bs-table-bg-type: rgba(255, 0, 0, 0.3)
+}
+   .table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-color-type: var(--bs-table-striped-color);
+  --bs-table-bg-type: var(--bs-table-striped-bg);
+}
+</style>
             <!---------List-Group---------------------------------------------->
             <div class="container mt-3" name="list-group">
             </div>
-
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action active">
+        <i class="fa fa-home"></i> Home
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+        <i class="fa fa-camera"></i> Pictures <span class="badge bg-secondary badge-pill badge-primary pull-right active">145</span>
+    </a>
+    <a href="https://www.spotify.com/" target="_blank" class="list-group-item list-group-item-action">
+        <i class="fa fa-music"></i> Music <span class="badge bg-secondary badge-pill badge-primary pull-right active">50</span>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+        <i class="fa fa-film"></i> Videos <span class="badge bg-secondary badge-pill badge-primary pull-right">8</span>
+    </a>
+    <a href="#" class="list-group-item cloud">
+       <i class="fa-solid fa-cloud"></i> 
+    </a>
+</div>
             <!---------Form Button--------------------------------------------->
             <div class="container mt-3 vstack" name="form-button">
             </div>
