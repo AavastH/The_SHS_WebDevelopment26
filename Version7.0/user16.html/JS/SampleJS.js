@@ -204,3 +204,64 @@ Author: Marco Barría
 https://twitter.com/marco_bf
 
 ******/
+function changeText() {
+ document.getElementById("textChange").innerHTML="Thanks for liking my Webpage";
+}
+var space = " ";
+var pos = 0;
+var msg = "User 19";
+
+function Scroll(){
+document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
+
+pos++;
+if (pos > msg.length) pos = 0;
+window.setTimeout("Scroll()", 0);
+}
+Scroll();
+
+
+
+ <div class="row">
+  <div class="col">
+function clearCoor() {
+  document.getElementById("demo").innerHTML = "You cleared the coordinates.";
+}
+</div>5
+  <div class="col">
+function writeText(txt) {
+  document.getElementById("desc").innerHTML = txt;
+}
+</div>
+  <div class="col">
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</div>
+  <div class="col">
+function myFunction() {
+  document.getElementById("demo").innerHTML = "You selected some text";
+}
+</div>
+   <div class="col">
+function myFunction() {
+  alert("You pressed a key inside the input field");
+}
+</div>
+  <div class="col">
+
+function myFunction(x) {
+  x.style.background = "yellow";
+}
+</div>
+  <div class="col">
+function color(color) {
+  document.forms[0].myInput.style.background = color;
+}
+</div>
+<div class="col">
+function myFunction() {
+  alert("Page is loaded");
+}
+ </div>
+</div>
